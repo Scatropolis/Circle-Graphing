@@ -1,0 +1,89 @@
+a:link,a:visited,a:hover,a:active { color:#000000; font-weight:bold; }
+
+body { 
+	margin: auto; 
+	font-family: arial,verdana,helvetica; 
+	background: #fff; 
+	text-align:center;}
+	
+#controls { 
+	z-index:1;
+	position:absolute;
+	top:10px; left:10px;}
+	
+		#inputdiv, #outputdiv, #anidiv, #infodiv {
+			border: 2px solid black;
+			margin: 0;
+			padding:5px;
+			width:364px;
+			background:white;
+			text-align:left;
+			opacity:.7; }
+			
+		#CircleCount {
+			margin: 0 0 1em 0; }
+
+		
+		h5 {
+			margin:.2em 0px 0px 0px;
+			text-align:left;}
+			
+		h3 {
+			font-size:1em;
+			margin:0px 0px 0px 0px;}
+			
+			h3.sections { margin:1em 0 0 0; }
+			#infodiv {margin:1em 0 0 0; }
+			
+		#SpeedLabel { clear:both; }
+			
+		#shapeurl {color:black}
+
+		#shapeurldiv {
+			margin:5px 0 0 0;
+			text-align:left;}
+			
+		div.slider {
+			width: 360px;
+			height: 10px;
+			background: #eee;}
+			
+		div.slider div.knob {
+			background: #000;
+			width: 16px;
+			height: 10px;
+		}
+		#fontSize {
+			height: 50px;
+		}
+	
+#canvasholder {
+	z-index:0;
+	position:absolute;
+	top:0px; left:0px;
+	width:100%; height:100%; 
+	overflow:auto; }
+
+#table { 
+	z-index:1;
+	background:white;
+	opacity:.7;
+	position:absolute;
+	top:10px; right:25px;
+	border:2px solid black }	
+	
+	tr.header { 
+		font-weight:bold;
+		text-align:center; }
+
+	#table table {
+		width:100px;
+		text-align:center; 
+		}
+	
+	#table tr, th, td {
+		width:50px;
+		text-align:center;
+		border:1px solid black; }
+		
+	
