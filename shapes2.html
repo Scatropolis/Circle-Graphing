@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Circle Graphs - by Stephan Ainley</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="mootools.js" type="text/javascript"></script>	
+	<script src="shapes.js" type="text/javascript"></script>
+  </head>
+  <body>
+	<div id="controls">
+		<h3 class="">Input (X)</h3>
+		<div id="inputdiv">
+			<div id="step">
+				<h5 id="Step2Label">Step = 2</h5>
+				<div id="Step2Slider" class="slider"><div class="knob"></div></div>
+			</div>
+			
+			<div id="rotation">
+				<h5 id="Rotation2Label">Rotation = 0</h5>
+				<div id="Rotation2Slider" class="slider"><div class="knob"></div></div>
+			</div>
+			
+			<div id="radius">	
+				<h5 id="Radius2Label">Radius = 150</h5>
+				<div id="Radius2Slider" class="slider"><div class="knob"></div></div>
+			</div>
+				
+			<div id="sine">	
+				<h5 id="Sine2Label">Radius Sine Distort** = 0</h5>
+				<div id="Sine2Slider" class="slider"><div class="knob"></div></div>
+			</div>
+		</div>
+			
+		<h3 class="sections">Output (Y)</h3>
+		<div id="outputdiv">
+			<!--<div id="step">
+				<h5 id="Step1Label">Step = 2</h5>
+				<div id="Step1Slider" class="slider"><div class="knob"></div></div>
+			</div>-->
+			<div id="rotation">
+				<h5 id="Rotation1Label">Rotation = 0</h5>
+				<div id="Rotation1Slider" class="slider"><div class="knob"></div></div>
+			</div>
+			<div id="radius">
+				<h5 id="Radius1Label">Radius* = 150</h5>
+				<div id="Radius1Slider" class="slider"><div class="knob"></div></div>
+			</div>
+			<div id="sine">
+				<h5 id="Sine1Label">Radius Sine Distort* = 0</h5>
+				<div id="Sine1Slider" class="slider"><div class="knob"></div></div>
+			</div>
+		</div>
+		
+
+		<h3 class="sections">Animation - <a id="RotationAnimate" href="#" onClick="rotateBool = !rotateBool; Animate();">GO</a></h3>
+		<div id="anidiv">			
+				<!--<INPUT TYPE="button" ID="RotationAnimate" NAME="RotationButton" VALUE="Go" onClick="rotateBool = !rotateBool; Animate();">--> 	
+							
+				<h5 id="SpeedLabel">Speed = 20</h5>
+					<div id="SpeedSlider" class="slider"><div class="knob"></div></div>
+					
+				<h5 id="AnimationStep1Label">Animation Step* = 10</h5>
+					<div id="AnimationStep1Slider" class="slider"><div class="knob"></div></div>
+					
+				<h5 id="AnimationStep2Label">Animation Step = 10</h5>
+					<div id="AnimationStep2Slider" class="slider"><div class="knob"></div></div>
+		</div>
+		
+		<div id="infodiv">
+				<b><p style="margin:0;" id="equation">Equation: y=2x</p></b>
+				<p style="margin:0 0 1em 0; font-size:.7em;">*Items not represented in equation</p>
+				
+				<div id="CircleCount">
+					<h5 id="CircleCountLabel">Number of Dots = 360</h5>
+					<div id="CircleCountSlider" class="slider"><div class="knob"></div></div>
+				</div>
+				
+				<a href="?">[Reset]</a>
+				<a id="shapeurl" title="Right click and copy link to send or save" href="">[Link to this shape]</a>
+				Ex: <a href="?180,144,300,0,-1,139,75,0,300,1,25">[1]</a>,
+				<a href="?1,0,161,140,0,1,0,36,260,5,25">[2]</a>,
+				<a href="?50,0,284,0,-1,100,0,284,100,1,25">[3]</a>
+		</div>
+		
+	</div>
+	<div id="table">
+		<table id="dynamictable"></table>
+	</div>
+	<div id="canvasholder">
+		<canvas id="canvas" width="1600" height="1200"></canvas>
+	</div>
+	<script>
+		document.getElementById("canvasholder").scrollTop=280;
+		document.getElementById("canvasholder").scrollLeft=100;
+		var gfx = document.getElementById('canvas').getContext('2d');
+		gfx.translate(810, 600);		
+	</script>
+  </body>
+</html>
